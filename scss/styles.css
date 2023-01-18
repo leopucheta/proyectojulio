@@ -164,8 +164,25 @@ div.carousel-caption {
   transition: var(--bs-navbar-toggler-transition);
 }
 
-.navbar-dark {
-  --bs-navbar-toggler-border-color: #212529 ;
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: url(../assets/logoJD.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.navbar-toggler-icon .navbar-dark {
+  --bs-navbar-color: rgba(255, 255, 255, 0.55);
+  --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+  --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+  --bs-navbar-active-color: #fff;
+  --bs-navbar-brand-color: #fff;
+  --bs-navbar-brand-hover-color: #fff;
+  --bs-navbar-toggler-border-color: #212529;
+  --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3e%3cpath stroke="rgba%28255, 255, 255, 0.55%29" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e);
 }
 
 @media (min-width: 62em) {
@@ -174,7 +191,17 @@ div.carousel-caption {
   }
 }
 @media (max-width: 425px) {
-  .carousel-item {
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url(../assets/logoJD.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+  .navbar-toggler-icon .carousel-item {
     position: relative;
     display: none;
     float: left;
@@ -186,7 +213,7 @@ div.carousel-caption {
     transition: transform 1s ease-in-out;
     height: 13rem;
   }
-  .carousel-caption {
+  .navbar-toggler-icon .carousel-caption {
     position: absolute;
     right: 106%;
     bottom: 1.25rem;
@@ -201,22 +228,22 @@ div.carousel-caption {
     bottom: 2rem;
     /* margin-bottom: 23rem; */
   }
-  p.lead {
+  .navbar-toggler-icon p.lead {
     font-size: 1rem;
     padding: 1rem;
   }
-  .btn {
+  .navbar-toggler-icon .btn {
     --bs-btn-font-size: 0.9rem;
   }
-  .marketing .col-lg-4 {
+  .navbar-toggler-icon .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
     text-align: center;
     transform: scale(1);
   }
-  .featurette-heading {
+  .navbar-toggler-icon .featurette-heading {
     font-size: 30px;
   }
-  .navbar-toggler {
+  .navbar-toggler-icon .navbar-toggler {
     padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
     font-size: var(--bs-navbar-toggler-font-size);
     line-height: 1;
@@ -227,7 +254,14 @@ div.carousel-caption {
     border-radius: var(--bs-navbar-toggler-border-radius);
     transition: var(--bs-navbar-toggler-transition);
   }
-  .navbar-dark {
-    --bs-navbar-toggler-border-color: #212529 ;
+  .navbar-toggler-icon .navbar-dark {
+    --bs-navbar-color: rgba(255, 255, 255, 0.55);
+    --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+    --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+    --bs-navbar-active-color: #fff;
+    --bs-navbar-brand-color: #fff;
+    --bs-navbar-brand-hover-color: #fff;
+    --bs-navbar-toggler-border-color: #212529
+    --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3e%3cpath stroke="rgba%28255, 255, 255, 0.55%29" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e);
   }
 }/*# sourceMappingURL=styles.css.map */
