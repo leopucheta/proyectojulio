@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;700&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+      
+    <link rel="stylesheet" href="scss/styles.css" />
+
+
+    <script src="https://kit.fontawesome.com/5f6e29c9ac.js" crossorigin="anonymous"></script>
+
+    <title>Julio Diarte</title>
+  </head>
+    <body>
+            <header>
+              <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Propiedades</a>
+                      </li>
+                    </ul>
+                    <p class="text-warning">Julio Diarte - Asesor inmobiliario</p>
+                    <!-- <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button> -->
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            </header>
+            
+            <main>
+            
+              <div id="myCarousel" class="carousel slide pointer-event" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item">
+                    <img src="./assets/meditatingfamily.png" class=" d-block w-100" alt="...">
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#333"></rect></svg> -->
+                    <div class="container">
+                      <div class="carousel-caption text-start bg-dark opacity-50 w-100  ">
+                        <h1>Tu proximo piso.</h1>
+                        <p>Cada vez mas cerca.</p>
+                        <!-- <p><a class="btn btn-lg btn-warning" href="#">Haz Click Aqui</a></p> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item active">
+                    <img src="./assets/compostela_mudanzas_vision.jpg" class="d-block w-100 " alt="...">
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                    <div class="container">
+                      <div class="carousel-caption text-start bg-dark opacity-50 w-100 ">
+                        <h1>Valoraciones gratuitas.</h1>
+                        <p>Tu casa en mejores manos.</p>
+                        <!-- <p><a class="btn btn-lg btn-primary" href="#">Aca no se que poner</a></p> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/familiaparque.jpg" class="d-block w-100 " alt="...">
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                    <div class="container">
+                      <div class="carousel-caption text-start bg-dark opacity-50 w-100">
+                        <h1>Reseñas de Google verificadas.</h1> <div class="social-icons">  
+                        <p>Calificacion de 4.9 sobre +100 reseñas</p>
+                        <!-- <p><a class="btn btn-lg btn-primary" href="#">Mira la galeria de fotos</a></p> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            
+            
+              <!-- Marketing messaging and featurettes
+              ================================================== -->
+              <!-- Wrap the rest of the page in another container to center all the content. -->
+            
+              <div class="container marketing">
+            
+                <!-- Three columns of text below the carousel -->
+                <div class="row">
+                  <div class="col-lg-4">                    
+                    <!-- <img src="./assets/digacasa.jpg" class=" julio d-block w-30 " alt="..."> -->
+                    <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+                    <!-- <h2 class="fw-normal">Diga Casa</h2>
+                    <p>Inmobiliaria.
+                    <p>Tu casa en mejores manos</p> -->
+                    <!-- <p><a class="btn btn-secondary" href="#">Valoraciones gratuitas »</a></p> -->
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-4">
+                    <img src="./assets/Julio.jpg" class=" julio d-block w-30  " alt="...">
+                    <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+                    <h2 class="fw-normal">Julio Diarte</h2>
+                    <p>Asesor inmobiliario.
+                    <p>Gestion de venta y alquiler de viviendas</p>
+                    <div class="social-icons">              
+                      <!-- Facebook -->
+                      <a href="https://www.facebook.com/juliodiarteoficial"><i class="fab fa-facebook-f fa-2x px-2" style="color: #3b5998;"></i></a>
+                      <!-- Twitter -->
+                      <a href="https://twitter.com/juliodiarte_"><i class="fab fa-twitter fa-2x px-2" style="color: #55acee;"></i></a>
+                      <!-- Google -->
+                      <a href="https://www.google.com/maps/place/Julio+Diarte+Asesor+inmobiliario+en+Madrid/@40.4379543,-3.6795366,11z/data=!4m2!3m1!1s0x0:0x843c889fee0eb47c?sa=X&ved=2ahUKEwjn1a7gvMP8AhXoT6QEHXQLCGgQ_BJ6BAhFEAg"><i class="fab fa-google fa-2x px-2" style="color: #dd4b39;"></i></a>
+                      <!-- Instagram -->
+                      <a href="https://www.instagram.com/juliodiarte_/"><i class="fab fa-instagram fa-2x px-2" style="color: #ac2bac;"></i></a>
+                      <!-- Linkedin -->
+                      <a href="https://www.linkedin.com/in/julio-diarte-298972172/?originalSubdomain=es"><i class="fab fa-linkedin-in fa-2x px-2" style="color: #0082ca;"></i></a>
+                      <!-- Youtube -->
+                      <a href="https://www.youtube.com/@juliodiarte_/featured"><i class="fab fa-youtube fa-2x px-2" style="color: #ed302f;"></i></a>
+                      <!-- Whatsapp -->
+                      <a href="https://api.whatsapp.com/send?phone=34671575651"><i class="fab fa-whatsapp fa-2x px-2" style="color: #25d366;"></i></a>
+                      </div>     
+                      <!-- <p><a class="btn btn-secondary" href="#">Contactame » </a></p> -->
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-4">
+                    <!-- <img src="./assets/Gooogle-Estrellas.jpg" class=" julio d-block w-30  " alt="..."> -->
+                    <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+                    <!-- <h2 class="fw-normal">Reseñas Verificadas.</h2>
+                    <p>Valoracion de 4.9✩ sobre +100 reseñas.
+                    <p>Verificadas por Google.</p> -->
+                    <!-- <p><a class="btn btn-secondary" href="#">Hecha un vistazo »</a></p> -->
+                  </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            
+            
+                <!-- START THE FEATURETTES -->
+            
+                <hr class="featurette-divider">
+            
+                <div class="row featurette">
+                  <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Asesoramiento de confianza. <span class="text-warning">  Totalmente personalizado.</span></h2>
+                    <p class="lead">Existen muchas maneras de hacer el trabajo del agente inmobiliario, sin embargo, un servicio exclusivo te permite un asesoramiento de calidad.</p>
+                    <p><a class="btn btn-warning" href="https://homelifeinmobiliaria.wordpress.com/" target="_blank" >Haz CLICK aqui, para ver todas mis reseñas verificadas en Google »</a></p>
+
+                  </div>
+                  <div class="col-md-5"> 
+                    <img src="./assets/casahandshaking.png"  class="featurette d-block w-100" alt="...">    
+                                
+                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+                  </div>
+                </div>
+            
+                <hr class="featurette-divider">
+            
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Comprar? Vender? Alquilar? <span class="text-warning">Puedo ayudarte.</span></h2>
+                    <p class="lead">Trabajo en el mercado inmobiliario desde 2011. Sin limite de zonas. Fotografias. Planos 3D. Tramitacion de herencias. Seguros de impago y muchas cosas mas.</p>
+                    <p><a class="btn btn-warning" href="#">Haz CLICK aqui para ver todas las propiedades disponibles »</a></p>
+
+                  </div>
+                  <div class="col-md-5 order-md-1">
+                    <img src="./assets/casita.png" class=" featurette d-block w-100" alt="...">    
+                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+                  </div>
+                </div>
+            
+                <hr class="featurette-divider">
+            
+                <div class="row featurette">
+                  <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Encuentra el piso ideal para ti.<span class="text-warning"> Contactame en mis redes sociales   </span></h2>
+                    <p class="lead">Puedes escribirme en cualquiera de mis redes sociales haciendo click en ellas y te contestare a la brevedad. El piso que estas buscando esta cada vez mas cerca</p>               
+                  </div>
+                  <div class="col-md-5">
+                    <img src="./assets/Social-Media-Marketing-1.png" class=" featurette d-block w-100" alt="...">    
+                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+                  </div>
+                </div>
+            
+                <hr class="featurette-divider">
+            
+                <!-- /END THE FEATURETTES -->
+            
+              </div><!-- /.container -->
+            
+            
+              <!-- FOOTER -->
+              <footer class="container">
+                <p class="float-end"><a href="#">Volver arriba</a></p>
+                <p>© 2022-2023. Leonardo Pucheta - Todos los derechos reservados · <a href="#">Privacidad</a> · <a href="#">Terminos y condiciones</a></p>
+              </footer>
+            </main>
+
+        <!-- BOOTSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+        <!-- Javascript -->
+        <!-- <script src="./index.js" > </script> -->
+    </body>
+</html>
