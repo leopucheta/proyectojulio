@@ -157,6 +157,7 @@ div.carousel-caption {
   font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
   margin: 0 auto;
+  transform: scale(1.4);
   color: var(--bs-navbar-color);
   background-color: transparent;
   border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
@@ -248,6 +249,7 @@ div.carousel-caption {
     font-size: var(--bs-navbar-toggler-font-size);
     line-height: 1;
     margin: 0 auto;
+    transform: scale(1.4);
     color: var(--bs-navbar-color);
     background-color: transparent;
     border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
