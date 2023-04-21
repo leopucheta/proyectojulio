@@ -3,7 +3,6 @@
 /* Padding below the footer and lighter body text */
 body {
   padding-top: 3rem;
-  padding-bottom: 3rem;
   color: #5a5a5a;
 }
 
@@ -13,47 +12,7 @@ main {
 
 /*navbar*/
 div.container-fluid {
-  margin-bottom: 1rem;
-}
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
-
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  position: absolute;
-  right: 106%;
-  bottom: 1.25rem;
-  /* left: 17%; */
-  padding-bottom: 4.25rem;
-  padding-top: 3.25rem;
-  color: #fff;
-  left: 17rem;
-  top: 9rem;
-  text-align: center;
-  max-width: 75rem;
-  bottom: 6rem;
-}
-.carousel-caption p {
-  margin-left: 2rem;
-}
-.carousel-caption h1 {
-  margin-left: 2rem;
-}
-
-img.d-block.w-100 {
-  margin: 0 auto;
-  max-width: 76rem;
-  padding: 3rem;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
+  margin-bottom: 0.5rem;
 }
 
 img.julio.d-block.w-30 {
@@ -63,12 +22,59 @@ img.julio.d-block.w-30 {
   margin: 0 auto;
   border: solid #f0ad4e 5px;
   box-shadow: 5px 5px 10px;
+  margin-top: -4rem;
 }
 
 h2.fw-normal {
   padding: 0.5rem;
 }
 
+/*hero*/
+.hero {
+  background-image: url("../assets/nicehouse.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 400px;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -99999999999;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin-top: 150px;
+  text-shadow: 1px 1px 1px rgb(135, 135, 135);
+}
+
+.hero p {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-shadow: 1px 1px 1px rgb(143, 143, 143);
+}
+
+.hero .btn {
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+}
+
+@media (max-width: 767px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 /* Center align the text within the three columns below the carousel */
@@ -109,9 +115,76 @@ div.carousel-caption {
   opacity: 0.5;
 }
 
+/*Contacto*/
+.hero {
+  background-color: #f2f2f2;
+  padding: 1rem 0;
+}
 
+.form-col {
+  padding-right: 50px;
+}
+
+.form {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 10px 10px 60px black;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.form h2 {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  border-radius: 5px;
+  border: none;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 3px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #ff7f50;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #e0623d;
+  color: #fff;
+}
+
+.img-col {
+  padding-left: 50px;
+}
+
+.img-fluid {
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .form-col {
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+  .img-col {
+    padding-left: 0;
+  }
+}
 /*Cookies style*/
-
 .notification {
   position: fixed;
   bottom: 20px;
@@ -123,7 +196,7 @@ div.carousel-caption {
   padding: 16px;
   max-width: 500px;
   width: 90%;
-  box-shadow: 0 8px 16px rgba(0,0,0,.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 9999;
   display: flex;
   flex-direction: column;
@@ -165,86 +238,32 @@ div.carousel-caption {
   background-color: #006c87;
 }
 
-
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-@media (max-width: 768px) {
-  /* Bump up size of carousel content */
-  .carousel-caption {
-    position: absolute;
-    right: 106%;
-    bottom: 1.25rem;
-    left: 17%;
-    padding-bottom: 5.25rem;
-    padding-top: 1.25rem;
-    color: #fff;
-    left: 1rem;
-    top: 3rem;
-    text-align: center;
-    max-width: 76rem;
-    bottom: 13rem;
-    /* margin-bottom: 23rem; */
-  }
-  .carousel-item {
-    position: relative;
-    display: none;
-    float: left;
-    width: 100%;
-    margin-bottom: -10rem;
-    margin-right: -100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transition: transform 1s ease-in-out;
-    height: 23rem;
-  }
-  .marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-    transform: scale(1);
-  }
-  img.d-block.w-100 {
-    padding: 0rem;
-  }
-  .featurette-heading {
-    font-size: 30px;
-  }
-}
-.navbar-toggler {
-  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
-  font-size: var(--bs-navbar-toggler-font-size);
-  line-height: 1;
-  margin: 0 auto;
-  transform: scale(1.4);
-  color: var(--bs-navbar-color);
-  background-color: transparent;
-  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
-  border-radius: var(--bs-navbar-toggler-border-radius);
-  transition: var(--bs-navbar-toggler-transition);
+/*Footer*/
+footer {
+  background-color: #212529;
+  color: #fff;
+  font-size: 14px;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
-.navbar-toggler-icon {
+footer p {
+  margin: 0;
+}
+
+.back-to-top {
+  color: #fff;
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  vertical-align: middle;
-  background-image: url(../assets/logoJD.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-}
-.navbar-toggler-icon .navbar-dark {
-  --bs-navbar-color: rgba(255, 255, 255, 0.55);
-  --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
-  --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
-  --bs-navbar-active-color: #fff;
-  --bs-navbar-brand-color: #fff;
-  --bs-navbar-brand-hover-color: #fff;
-  --bs-navbar-toggler-border-color: #212529;
-  --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3e%3cpath stroke="rgba%28255, 255, 255, 0.55%29" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e);
+  margin-top: 10px;
 }
 
+.back-to-top:hover {
+  text-decoration: none;
+}
+
+/* RESPONSIVE CSS*/
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
@@ -325,4 +344,4 @@ div.carousel-caption {
     --bs-navbar-toggler-border-color: #212529
     --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3e%3cpath stroke="rgba%28255, 255, 255, 0.55%29" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e);
   }
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
