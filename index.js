@@ -1,3 +1,5 @@
+<script src="js/js-cookie.js"></script>
+
 // Función para manejar el evento del botón de aceptar cookies
 const handleAcceptCookies = () => {
   // Se crean las cookies con sus valores y opciones correspondientes
