@@ -30,11 +30,19 @@ h2.fw-normal {
 }
 
 /*hero*/
-.hero {
+.hero-index {
   background-image: url("../assets/nicehouse.jpg");
   background-size: cover;
   background-position: center center;
   min-height: 400px;
+  position: relative;
+}
+
+.hero-form {
+  background-image: url("../assets/nicehouse.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 1000px;
   position: relative;
 }
 
@@ -48,14 +56,14 @@ h2.fw-normal {
   z-index: -99999999999;
 }
 
-.hero h1 {
+.hero-index h1 {
   color: #fff;
   font-size: 3rem;
   margin-top: 150px;
   text-shadow: 1px 1px 1px rgb(135, 135, 135);
 }
 
-.hero p {
+.hero-index p {
   color: #fff;
   font-size: 1.5rem;
   margin-top: 20px;
@@ -67,14 +75,6 @@ h2.fw-normal {
   border-color: #ff8c00;
 }
 
-@media (max-width: 767px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .hero p {
-    font-size: 1rem;
-  }
-}
 /*Privacidad y Cookies*/
 .privacidad {
   max-width: 700px;
@@ -107,6 +107,7 @@ p {
 
 a {
   color: #f79031;
+  text-decoration: none;
 }
 
 a:hover {
@@ -161,6 +162,21 @@ div.carousel-caption {
 }
 
 div.form-container {
+  padding: 1rem;
+}
+
+.hero {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.hero iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   padding: 1rem;
 }
 
@@ -244,17 +260,15 @@ footer p {
 }
 
 /* RESPONSIVE CSS*/
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
 @media (max-width: 768px) {
   .navbar-toggler {
     margin: 0 auto;
   }
-  .navbar-toggler div.col-md-6.form-col {
-    display: flex;
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
