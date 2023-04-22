@@ -75,6 +75,45 @@ h2.fw-normal {
     font-size: 1rem;
   }
 }
+/*Privacidad y Cookies*/
+.privacidad {
+  max-width: 700px;
+  margin: auto;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #f79031;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+a {
+  color: #f79031;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #d7700f;
+}
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 /* Center align the text within the three columns below the carousel */
@@ -87,6 +126,7 @@ h2.fw-normal {
 .marketing .col-lg-4 p {
   margin-right: 0rem;
   margin-left: 0rem;
+  margin-bottom: 1rem;
 }
 
 /* Featurettes
@@ -118,6 +158,10 @@ div.carousel-caption {
 /*Contacto*/
 .row > * {
   margin-top: 2rem;
+}
+
+div.form-container {
+  padding: 1rem;
 }
 
 /*Cookies style*/
@@ -208,6 +252,9 @@ footer p {
 @media (max-width: 768px) {
   .navbar-toggler {
     margin: 0 auto;
+  }
+  .navbar-toggler div.col-md-6.form-col {
+    display: flex;
   }
 }
 /*# sourceMappingURL=styles.css.map */
